@@ -1,0 +1,650 @@
+@import url('util.css');
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url('../fonts/myriadpro-regular/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),  url('../fonts/myriadpro-regular/MyriadPro-Regular.otf')  format('opentype'),
+	     url('../fonts/myriadpro-regular/MyriadPro-Regular.woff') format('woff'), url('../fonts/myriadpro-regular/MyriadPro-Regular.ttf')  format('truetype'), url('../fonts/myriadpro-regular/MyriadPro-Regular.svg#MyriadPro-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'MyriadPro-Bold';
+  src: url('../fonts/myriadpro/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),  url('../fonts/myriadpro/MyriadPro-Bold.otf')  format('opentype'),
+	     url('../fonts/myriadpro/MyriadPro-Bold.woff') format('woff'), url('MyriadPro-Bold.ttf')  format('truetype'), url('../fonts/myriadpro/MyriadPro-Bold.svg#MyriadPro-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GillSansMTPro-Light';
+  src: url('../fonts/GillSansMTPro-Light/GillSansMTPro-Light.eot?#iefix') format('embedded-opentype'),  url('../fonts/GillSansMTPro-Light/GillSansMTPro-Light.otf')  format('opentype'),
+	     url('../fonts/GillSansMTPro-Light/GillSansMTPro-Light.woff') format('woff'), url('../fonts/GillSansMTPro-Light/GillSansMTPro-Light.ttf')  format('truetype'), url('../fonts/GillSansMTPro-Light/GillSansMTPro-Light.svg#GillSansMTPro-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'VinerHandITC';
+  src: url('../fonts/VinerHandITC/VinerHandITC.eot?#iefix') format('embedded-opentype'),  url('../fonts/VinerHandITC/VinerHandITC.woff') format('woff'), url('../fonts/VinerHandITC/VinerHandITC.ttf')  format('truetype'), url('../fonts/VinerHandITC/VinerHandITC.svg#VinerHandITC') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'winsomeregular';
+    src: url('../fonts/winsomeregular/winsome.otf') format('embedded-opentype'),
+    	 url('../fonts/winsomeregular/winsome.woff2') format('woff2'),
+         url('../fonts/winsomeregular/winsome.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body, html {
+    height: 100%;
+}
+
+* {
+	margin:0px;
+	padding:0px;
+	outline: none;
+	font-family: 'Roboto', sans-serif;
+}
+.transition {
+    transition: all 0.5s ease 0s;
+}
+.modal.fade.in {
+	z-index: 99999;
+}
+.botao-voltar-topo {
+	bottom: 10px;
+    position: fixed;
+    right: 10px;
+}
+/*Header*/
+.header-principal .row {
+	position: relative;
+}
+.header-principal .fixed {
+	position: absolute; 
+	z-index: 99999; 
+	width: 100%;
+}
+.box-pedido-online {
+	margin-top: 20px;
+}
+.box-logo {
+	margin-top: 20px;
+}
+@media (max-width: 1200px) {
+	.box-logo img {
+		width: 200px;
+	}
+}
+.box-pedido-online a {
+	position: relative;
+	float: right;
+	display: block;
+}
+.box-pedido-online img {
+	position: relative;
+	float: left;
+}
+.box-pedido-online .text-pedido-online {
+	position: relative;
+	float: left;
+	width: 62px;
+	color: #fff;
+}
+.box-icon-fone {
+	margin-top: 20px;
+}
+.box-icon-fone img {
+	position: relative;
+	float: left;
+}
+.box-icon-fone .text-fone {
+	position: relative;
+	float: left;
+	width: 140px;
+	color: #fff;
+	text-align: right;
+	font-weight: bold;
+	font-size: 19px;
+}
+.box-navegacao {
+	position: fixed;
+	left: 0;
+	top: 50%;
+    height: 250px;
+    margin-top: -100px;
+    padding-bottom: 10px;
+    padding-top: 10px;  
+    z-index: 99999999999;
+}
+.box-navegacao ul {
+	list-style: none;
+}
+.box-navegacao ul li {
+	background: transparent;
+	margin-bottom: 1px;
+}
+.box-navegacao ul li a {
+	background: #ee1c25;
+    color: transparent;
+    display: block;
+    padding: 0px 0;
+    text-align: center;
+    width: 10px;
+    height: 52px;
+}
+.box-navegacao ul li a:hover {
+	background-color: #ee1c25;
+	color:#ffffff;
+	width: 150px;
+	text-decoration: none;
+	line-height: 52px;
+}
+.box-navegacao ul li a.btn-cardapio {
+	width: 15px;
+}
+.box-navegacao ul li a.btn-cardapio:hover {
+	width: 150px;
+}
+.box-navegacao ul li a.btn-pedido-online {
+	width: 20px;
+}
+.box-navegacao ul li a.btn-pedido-online:hover {
+	width: 150px;
+}
+.box-navegacao ul li a.btn-a-vo-maria {
+	width: 25px;
+}
+.box-navegacao ul li a.btn-a-vo-maria:hover {
+	width: 150px;
+}
+.box-navegacao ul li a.btn-contato {
+	width: 30px;
+}
+.box-navegacao ul li a.btn-contato:hover {
+	width: 150px;
+}
+/*Carousel banner principal*/
+.loop.owl-theme .owl-dots .owl-dot span {
+	border: 0px !important;
+	background: transparent !important;
+}
+.loop.owl-theme .owl-dots .owl-dot.active span {
+	background: transparent;
+	border: none;
+}
+.loop.owl-theme .owl-dots .owl-dot  {
+	background: url('../images/dot_inactive.png') no-repeat !important;
+	width: 18px;
+	height: 65px;
+}
+.loop.owl-theme .owl-dots .owl-dot.active  {
+	background: url('../images/dot_active.png') no-repeat !important;
+	width: 65px;
+	height: 65px;
+	margin-right: -12px;
+}
+.header-principal .owl-theme.loop .owl-dots {
+    margin-top: 50px !important;
+}
+/*Fim Header*/
+/*Box Categorias*/
+.owl-prev {
+    position: absolute;
+    top: 50%;
+    margin-top: -53px;
+    left: -7%;
+}
+.owl-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -53px;
+    right: -7%;
+}
+.loop-noticias .box-img-categoria {
+	position: relative;
+    object-fit: cover;
+    border-radius: 100%;
+    overflow: hidden;
+    height: 218px;
+    width: 218px;
+    text-align: center;
+    margin: 0 auto;
+}
+.loop-noticias h2 {
+	text-align: center;
+	margin-top: 20px;
+	text-transform: uppercase;
+	font-size: 29px;
+	color: #222222;
+	font-family: MyriadPro-Regular;
+}
+.loop-noticias .box-img-categoria .hover {
+	background-color: #e32f2b;
+	position: absolute;
+	top: 0px;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 100%;
+    border: 6px solid #ee1c25;
+}
+.loop-noticias .box-img-categoria .hover img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: auto;
+	height: 40px; 
+	width: 70px;
+	margin-top: -20px;
+	margin-left: -35px;
+
+}
+.loop-noticias .box-img-categoria:hover .hover {
+    opacity: 0.8;
+}
+.loop-noticias .box-img-categoria img.img-categoria {
+	width: 100%;
+	height: 100%;
+}
+.box-carpadio-home {
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+.box-carpadio-home h1 {
+	font-family: MyriadPro-Regular;
+	font-size: 40px;
+	color: #222222;
+	text-transform: uppercase;
+	text-align: center;
+}
+.box-carpadio-home h1 span {
+	font-family: MyriadPro-Bold;
+	font-size: 40px;
+	color: #ee1c25;
+}
+.box-carpadio-home p {
+	text-align: center;
+	margin-bottom: 70px;
+	color: #4b4b4b;
+	font-size: 18px;
+	font-family: GillSansMTPro-Light;
+}
+.box-carpadio-home p.text-tradicional {
+	font-family: VinerHandITC;
+	font-size: 28px;
+}
+.content-cardapio .box-carpadio-home.box-curiosidades p {
+	text-align: left;
+	margin-bottom: 20px !important;
+	color: #4b4b4b;
+	font-size: 18px;
+	font-family: GillSansMTPro-Light;
+}
+.content-cardapio .box-carpadio-home.box-curiosidades p .red {
+	color: #ee1c25;
+}
+/*Fim Box Categorias*/
+/*Inicia Section Conheça Pizza*/
+.section-conheca {
+	background: url('../images/banner_conheca.jpg') no-repeat !important;
+	background-attachment: fixed !important;
+	background-position: center !important;
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	width: 100%;
+	height: 560px;
+	margin-bottom: 70px;
+}
+.box-conheca-pizza-frita img {
+	display: block;
+	margin: 140px auto 50px auto;
+}
+.box-conheca-pizza-frita p {
+	font-size: 14px;
+	color: #ffffff;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+}
+/*Fim Section Conheça Pizza*/
+/*Inicia Section Conheça A Casa*/
+.box-conheca-casa {
+	margin-bottom: 70px;
+}
+.box-conheca-casa h1 {
+	font-family: MyriadPro-Regular;
+	font-size: 40px;
+	color: #222222;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 13px;
+	margin-bottom: 70px;
+}
+.box-conheca-casa h1 span {
+	font-family: MyriadPro-Bold;
+	font-size: 40px;
+	color: #ee1c25;
+}
+.box-conheca-casa .title-info {
+	font-family: MyriadPro-Regular;
+	font-size: 20px;
+	color: #ee1c25;
+	text-transform: uppercase;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+}
+.linhaDivisoria {
+    background-image: url(../images/ponto.jpg);
+    background-repeat: repeat-x;
+    background-size: 1px;
+    height: 45px;
+    background-position: center;
+    text-align: center;
+    margin-bottom: 70px;
+}
+.linhaDivisoria img {
+    background: #fff;
+    padding: 0px 15px;
+}
+/*Fim Section A Casa*/
+/*Inicia Section Localizacao*/
+.box-localizacao {
+	margin-bottom: 70px;
+}
+.box-localizacao h1 {
+	font-family: MyriadPro-Regular;
+	font-size: 40px;
+	color: #222222;
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 13px;
+	margin-bottom: 20px;
+}
+.box-localizacao h1 span {
+	font-family: MyriadPro-Bold;
+	font-size: 40px;
+	color: #ee1c25;
+}
+.box-localizacao .title-info {
+	font-family: MyriadPro-Regular;
+	font-size: 20px;
+	color: #ee1c25;
+	text-transform: uppercase;
+	margin: 0 auto;
+	display: block;
+	text-align: center;
+	height: 20px;
+	line-height: 20px;
+}
+.box-localizacao address {
+	font-family: MyriadPro-Regular;
+	font-size: 20px;
+	color: #777777;
+	text-align: center;
+}
+/*Fim Section Localizacao*/
+/*Inicio Section contato*/
+.section-contato .box-contato {
+	margin: 70px 0px;
+}
+.box-contato .form-control {
+	margin-bottom: 30px;
+	font-family: MyriadPro-Regular;
+	font-size: 18px;
+	color: #777777;
+	height: auto;
+	padding: 20px 25px;
+}
+.botao-enviar {
+	font-family: MyriadPro-Regular;
+	background: #ee1c25;
+	color: #fff;
+	border: none;
+	width: 160px;
+	height: 56px;
+	line-height: 56px;
+	text-align: center;
+	text-transform: uppercase;
+	margin-top: 40px;
+}
+/*Fim Section contato*/
+/*Inicio Footer*/
+footer {
+	background: #020202;
+	padding: 120px 0px;
+}
+footer h2 {
+	font-family: MyriadPro-Regular;
+	font-size: 18px;
+	color: #fcf207;
+	text-transform: uppercase;
+	margin-bottom: 50px;
+}
+footer p {
+	font-size: 14px;
+	color: #ffffff;
+	font-family: 'Lato', sans-serif;
+}
+footer img.mb-30 {
+	margin-bottom: 30px;
+}
+footer p.menor {
+	font-size: 12px;
+}
+.box-midias-socias a i {
+	color: #fff;
+	font-size: 25px;
+	margin-right: 10px;
+}
+.box-midias-socias a:hover {
+	text-decoration: none;
+}
+.menor i.fa-clock {
+	font-size: 20px;
+	margin-right: 10px;
+	line-height: 21px;
+	float: left;
+}
+.box-horario {
+	height: 20px;
+	line-height: 20px;
+}
+.box-diretos p {
+	color: #020202;
+	font-size: 12px;
+	font-family: MyriadPro-Regular;
+	padding: 30px 0px;
+	margin-bottom: 0px;
+	text-align: center;
+}
+/*Fim Footer*/
+/*Inicio Página Cardápio*/
+.content-cardapio .box-carpadio-home {
+	margin-bottom: 50px;
+}
+.content-cardapio .box-carpadio-home p {
+	margin-bottom: 0px;
+}
+.content-cardapio {
+	padding-bottom: 70px;
+	margin-bottom: 70px; 
+	border-bottom: 1px solid #e6e6e6;
+}
+.box-categories {
+	position: relative;
+	float: left;
+	margin-bottom: 0px;
+	width: 100%;
+}
+.box-categories h2 {
+	position: relative;
+	float: left;
+	font-size: 29px;
+	font-family: MyriadPro-Regular;
+	color: #222222;
+	text-transform: uppercase;
+	margin-top: 0px;
+}
+.list-categories {
+	position: relative;
+	float: right;
+}
+.box-categories ul.list-categories li {
+	background: #ffd800;
+	position: relative;
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 20px;
+	text-decoration: none;
+	list-style: none;
+	border-radius: 10px;
+}
+.box-categories ul.list-categories li.active, .box-categories ul.list-categories li:hover {
+	background: #e72a32;	
+}
+.box-categories ul.list-categories li.active a, .box-categories ul.list-categories li:hover a {
+	color: #fff;
+}
+.box-categories ul.list-categories li a {
+	position: relative;
+	float: left;
+	padding: 10px 15px;
+	font-size: 16px;
+	color: #421008;
+	text-decoration: none;
+}
+.item-product {
+	position: relative;
+	padding: 15px 0px;
+	margin-bottom: 10px;
+	border-bottom: 15px solid #f6f6f6;
+}
+.item-product .btn-fazer-pedido {
+	position: relative;
+	float: left;
+	border-left: 1px solid #e6e6e6;
+	padding-left: 35px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	margin-top: 20px;
+}
+.item-product h3 {
+	font-size: 20px;
+	font-family: MyriadPro-Regular;
+	color: #ee1c25;
+	margin-top: 20px;
+}
+.item-product .box-size {
+	font-size: 14px;
+	color: #989898;
+}
+.item-product p {
+	font-size: 17px;
+	color: #1d1d1d
+}
+.item-product img {
+	width: 100%;
+}
+.box-selecione {
+	padding: 10px 15px;
+	background: #f6f6f6;
+	margin-right: 15px;
+	color: #989898;
+	font-size: 18px;
+}
+.btn-banner-delivery {
+	position: relative;
+	float: left;
+	margin-top: -35px;
+}
+/*Fim Página Cardápio*/
+/*Área Botão Flutuante*/
+.box-area-central-rel {
+	position: relative;
+	float: left;
+}
+.area-central-relacionamento {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    left: 80px;
+    top: 300px;
+    z-index: 4;
+}
+.area-central-relacionamento .link {
+    display: block;
+    text-decoration: none;
+    width: 167px;
+    text-align: center;
+    padding: 10px 0px;
+    margin-bottom: 1px;
+}
+/*Inicio Responsivo*/
+@media (max-width: 768px) {
+    .header-principal .fixed {
+   		position: relative;
+    }
+    .header-principal .box-contato {
+		background-color: #ffd800;
+	}
+    .box-pedido-online a {
+    	float: left;
+    }
+    .box-pedido-online .text-pedido-online {
+    	color: #000;
+    }
+    .box-icon-fone .text-fone {
+    	text-align: left;
+    	color: #000;
+    }
+    .box-navegacao {
+		display: none;
+	}
+	.btn-banner-delivery {
+		margin: 0 auto;
+		float: none;
+		display: block;
+		text-align: center;
+	}
+	.btn-banner-delivery img {
+		margin: auto;
+	}
+	.box-categories {
+		padding: 10px 15px;
+	}
+	.list-categories {
+		position: relative;
+		float: left;
+	}
+	footer {
+	    padding: 60px 0px;
+	}
+	.logo-principal {
+		margin: 0 auto 40px auto;
+		float: none;
+		display: block;
+		text-align: center;
+	}
+	.logo-principal img {
+		margin: auto;
+	}
+}
+
+@media (max-width: 599px) {
+    
+}
+
+@media (max-width: 361px) {
+   
+}
+
+@media (max-width: 320px) {
+	
+}

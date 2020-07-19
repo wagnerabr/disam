@@ -1,0 +1,210 @@
+.clear {
+    clear: both;
+}
+
+.box-cabecalho h1 {
+    float: left;
+}
+
+.list-user {
+    float: right;
+    margin-top: 20px;
+}
+
+.botao-enviar {
+    font-size: 15px;
+    width: 112px;
+    margin: 20px 0px;
+}
+
+.box-form-cadastro input,
+.box-form-cadastro textarea {
+    margin-bottom: 20px;
+}
+
+.box-direitos-rodape {
+    text-align: center;
+    padding: 60px 0px 30px 0px;
+}
+
+.header h1 {
+    text-align: center;
+}
+
+.box-form-login .btn-entrar {
+    float: right;
+}
+
+.botao-reservar {
+    font-size: 15px;
+    margin: 25px 0px;
+}
+
+a.print {
+    padding: 4px 4px 4px 24px;
+    border: 1px solid #D0D0D0;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    float: right;
+    margin: 20px 20px 0 0;
+    color: #4C4C4C;
+    text-decoration: none;
+}
+
+a.print {
+    background: url("imagens/printer.png") no-repeat 4px center #EBEBEB;
+}
+
+.text-subtitle {
+    font-size: 12px;
+}
+
+
+/*
+UploadiFive
+Copyright (c) 2012 Reactive Apps, Ronnie Garcia
+*/
+
+.uploadifive-button,
+.uploadifive-button:hover {
+    background-color: #1dbf73 !important;
+    border: 0 none;
+    color: #fff !important;
+    font-family: 'Titillium Web', sans-serif !important;
+    font-size: 25px !important;
+    -o-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    -webkit-border-radius: 0px !important;
+    border-radius: 0px !important;
+    cursor: pointer!important;
+}
+
+.uploadifive-button:hover {}
+
+.uploadifive-queue-item {
+    background-color: #F5F5F5;
+    border-bottom: 1px dotted #D5D5D5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    font: 12px Arial, Helvetica, Sans-serif;
+    margin-top: 3px;
+    padding: 15px;
+}
+
+.uploadifive-queue-item .close {
+    background: url('../images/uploadifive-cancel.png') 0 0 no-repeat;
+    display: block;
+    float: right;
+    height: 16px;
+    text-indent: -9999px;
+    width: 16px;
+}
+
+.uploadifive-queue-item .progress {
+    border: 1px solid #D0D0D0;
+    height: 3px;
+    margin-top: 5px;
+    width: 100%;
+}
+
+.uploadifive-queue-item .progress-bar {
+    background-color: #0072BC;
+    height: 3px;
+    width: 0;
+}
+
+.btn.btn-mini {
+    background: transparent;
+}
+
+.btn-mini i {
+    font-size: 30px;
+    color: #000;
+}
+
+.btn-mini.desativo i {
+    color: red;
+}
+
+.btn-mini.ativo i {
+    color: green;
+}
+
+.btn-mini .fa-minus-circle.red {
+    color: red;
+}
+
+.content-form-login {
+    background: #fff;
+    padding: 40px 40px;
+    margin-top: 50px;
+    border-radius: 5px;
+    border: 1px solid #e9b6a1;
+}
+
+.content-form-login h2 {
+    margin-bottom: 20px;
+}
+
+.content-form-login h2,
+.content-form-login label {
+    color: #fff;
+}
+
+.content-form-login img {
+    padding: 0px 20px;
+}
+
+.content-form-login .btn-entrar {
+    color: #fff;
+    background-color: #36c6d3;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.content-form-login .btn-entrar:hover {
+    color: #36c6d3;
+    background-color: #fff;
+}
+
+.content-form-login .detail {
+    color: #fff;
+}
+
+
+/**/
+
+.box-main {
+    border: 1px solid #ddd;
+}
+
+.box-cabecalho .top-header {
+    background: #fff;
+    padding: 20px 30px;
+}
+
+.box-cabecalho .top-header .img-logo {
+    max-width: 200px;
+}
+
+.box-cabecalho .top-header .list-user {
+    color: #fff;
+}
+
+.box-cabecalho .top-header .list-user a {
+    color: #2aabd2;
+}
+
+.btn-info.btn-cadastrar {
+    background: #69B835;
+    border-color: #69B835;
+    margin-right: 20px;
+}
+
+.btn-info.btn-cadastrar:hover {
+    background: #315925;
+    border-color: #315925;
+}
