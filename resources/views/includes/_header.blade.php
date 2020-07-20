@@ -2,7 +2,7 @@
 	<nav class="navbar navbar-expand-lg navbar-light ">
 	  <div class="container box-principal-menu">
 		  <a class="navbar-brand" href="{{ url('/') }}/" title="Monitoramento virtual">
-		  		<img class="img-fluid img-logo" alt="Monitoramento virtual" src="{{ url('/') }}/assets/img/logo.jpg">
+		  		<img class="img-fluid img-logo" alt="Monitoramento virtual" src="{{ url('/') }}/assets/img/logo.png">
 		  </a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
