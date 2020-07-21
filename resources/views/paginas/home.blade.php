@@ -25,54 +25,122 @@
 		    @endforeach
 		</div> 
 	</section>
-	<section class="section-nossos-servicos" id="box-nossos-servicos-nav">
-    	<div class="container">
-    		<div class="row">
-				<div class="col-12 col-sm-12 col-md-12">
-					<div class="box-title">
-						<h2>
-							Nossos <strong> Serviços </strong>
-						</h2>
+
+
+	<section class="section-institucional" id="box-institucional-nav">
+		<div class="row">
+			<div class="col-md-6 col-sm-6 col-xs-12">
+				<img src="{{url('/')}}/assets/img/sobre-nos.png" alt="Nossa Unidades" class="img-responsive">
+			</div>
+			<div class="col-md-6 col-sm-6 col-xs-12">
+				<h2>SOBRE NÓS</h2>
+				<p>
+					Atuando desde o início no comércio e distribuição de insumos agrícolas, a DISAM firmou sua excelência no segmento ao expandir suas atividades no ano de 2002 para o recebimento, importação e exportação de cereais, além da produção de sementes de soja e trigo a partir de 2004.<br>
+					A partir daí a empresa se consolidou no mercado em que atua tornando-se uma referencia no fornecimento de produtos, assistência técnica e credibilidade no ramo agrícola.
+				</p>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 col-sm-12 col-xs-12">
+					<div class="row">
+						<div class="col-md-3 col-sm-4 col-xs-5">
+							<img src="{{url('/')}}/assets/img/missao.png" alt="Missão" class="img-responsive">
+						</div>
+						<div class="col-md-9 col-sm-8 col-xs-7">
+							<h3>Missão</h3>
+							<p>“Fornecer produtos e serviços de alta tecnologia e qualidade, que auxiliem na produção e comercialização de alimentos, visando a satisfação de nossos clientes e o respeito ao meio ambiente”.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-12 col-xs-12">
+					<div class="row">
+						<div class="col-md-3 col-sm-4 col-xs-5">
+							<img src="{{url('/')}}/assets/img/visao.png" alt="Visão" class="img-responsive">
+						</div>
+						<div class="col-md-9 col-sm-8 col-xs-7">
+							<h3>Visão</h3>
+							<p>“Ser reconhecida como uma empresa líder do agronegócio brasileiro, desenvolvendo os melhores produtos e serviços com a mais moderna tecnologia para agricultura”.</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-12 col-xs-12">
+					<div class="row">
+						<div class="col-md-3 col-sm-4 col-xs-5">
+							<img src="{{url('/')}}/assets/img/valores.png" alt="Valores" class="img-responsive">
+						</div>
+						<div class="col-md-9 col-sm-8 col-xs-7">
+							<h3>Valores</h3>
+							<p>Responsabilidade Social, Respeito ao meio ambiente, Honestidade e Compromisso com seus clientes e colaboradores.</p>
+						</div>
 					</div>
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-12 col-sm-4 col-md-4">
-					<div class="box-servicos">
-						<img src="{{url('/')}}/assets/img/seguranca-armada.jpg" alt="SEGURANÇA ARMADA">
-						<h3>
-							SEGURANÇA ARMADA
-						</h3>
-						<p>
-							Lorem ipsum dolor sicon adipiscing elit. Etiam antferme ntubero eget rorem interdum.
-						</p>
-					</div>
-				</div>
-				<div class="col-12 col-sm-4 col-md-4">
-					<div class="box-servicos">
-						<img src="{{url('/')}}/assets/img/monitoramento.jpg" alt="MONITORAMENTO DIGITAL">
-						<h3>
-							MONITORAMENTO DIGITAL
-						</h3>
-						<p>
-							Lorem ipsum dolor sicon adipiscing elit. Etiam antferme ntubero eget rorem interdum.
-						</p>
-					</div>
-				</div>
-				<div class="col-12 col-sm-4 col-md-4">
-					<div class="box-servicos">
-						<img src="{{url('/')}}/assets/img/limpeza.jpg" alt="LIMPEZA E JARDINAGEM">
-						<h3>
-							LIMPEZA E JARDINAGEM
-						</h3>
-						<p>
-							Lorem ipsum dolor sicon adipiscing elit. Etiam antferme ntubero eget rorem interdum.
-						</p>
-					</div>
-				</div>
+		</div>
+		<img src="{{url('/')}}/assets/img/banner-home.png" alt="Responsabilidade Social" class="img-responsive" width="100%">
+	</section>
+
+
+	<section class="section-cotacoes" id="box-cotacoes-nav">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-6">
+    				<h2>Cotações: <span>10/07/2020</span></h2>
+    				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod dignissim dictum. Mauris arcu leo, blandit quis vestibulum ac, lacinia quis dolor.</p>
+    			</div>
+    			<div class="col-md-6">
+    				<div class="row">
+    					<div class="col-md-6">
+    						<img src="{{url('/')}}/assets/img/trigo.png" alt="Cotação Trigo" class="img-responsive">
+    						<h3>Trigo</h3>
+    						<h4>R$ 58,00</h4>
+    					</div>
+    					<div class="col-md-6">
+    						<img src="{{url('/')}}/assets/img/soja.png" alt="Cotação Soja" class="img-responsive">
+    						<h3>Soja</h3>
+    						<h4>R$ 100,00</h4>
+    					</div>
+    					<div class="col-md-6">
+    						<img src="{{url('/')}}/assets/img/dolar.png" alt="Cotação Dolar" class="img-responsive">
+    						<h3>Dolar</h3>
+    						<h4>R$ 5,2978</h4>
+    					</div>
+    					<div class="col-md-6">
+    						<img src="{{url('/')}}/assets/img/milho.png" alt="Cotação Milho" class="img-responsive">
+    						<h3>Milho</h3>
+    						<h4>R$ 41,50</h4>
+    					</div>
+    				</div>
+    			</div>
     		</div>
     	</div>
 	</section>
+
+	<section class="section-noticias" id="box-noticias-nav">
+		<div class="container">
+			<div class="row">
+				<h2><span>ÚLTIMAS</span>NOTÍCIAS</h2>
+			</div>
+			<div class="row carousel-noticias">
+				@for ($i = 0; $i < 9; $i++)
+				    <article>
+				    	<a href="#">
+					    	<img src="{{url('/')}}/assets/img/noticia.png" alt="NOTICIA" class="img-responsive">
+					    	<h3>Título Aqui {{ $i }}</h3>
+					    	<p>Lorem ipsum dolor sit amet, consectetur.</p>
+				    	</a>
+				    </article>
+				@endfor
+			</div>
+		</div>
+	</section>
+
+
+
+
+
 	<section class="section-sobre" id="box-valores-nav">
     	<div class="container-fluid">
     		<div class="row">
@@ -299,6 +367,40 @@
 						items:1,
 						nav:false,
 						dots:true,
+					}
+				}
+			});
+
+			$('.carousel-noticias').owlCarousel({
+				loop:false,
+				margin:20,
+				responsiveClass:true,
+				dots:true,
+				nav:false,
+				autoplay:false,
+				autoplayTimeout:3000,
+				autoplayHoverPause:true,
+				smartSpeed: 1000,
+				responsive:{
+					0:{
+						items:1,
+						nav:true,
+						dots:false,
+						slideBy: 1,
+					},
+					600:{
+						items:2,
+						nav:false,
+						dots:true,
+						slideBy: 2,
+						dotsEach: 2,
+					},
+					1000:{
+						items:3,
+						nav:false,
+						dots:true,
+						slideBy: 3,
+						dotsEach: 3,
 					}
 				}
 			});
