@@ -84,7 +84,7 @@
 
 
 	<section class="section-cotacoes" id="box-cotacoes-nav">
-    	<div class="container">
+    	<div class="container containerG">
     		<div class="row">
     			<div class="col-md-6">
     				<h2>Cotações: <span>10/07/2020</span></h2>
@@ -119,7 +119,7 @@
 	</section>
 
 	<section class="section-noticias" id="box-noticias-nav">
-		<div class="container">
+		<div class="container containerG">
 			<div class="row">
 				<h2><span>ÚLTIMAS</span>NOTÍCIAS</h2>
 			</div>
@@ -137,67 +137,66 @@
 		</div>
 	</section>
 
-
-
-
-
-	<section class="section-sobre" id="box-valores-nav">
-    	<div class="container-fluid">
-    		<div class="row">
-    			<div class="col-12 col-sm-12 ">
-					<div class="box-sobre">
-						<h2>
-							Missão
-						</h2>
-						<h3>
-							Lorem ipsum dolor sit amet, consectetur.
-						</h3>
-						<p>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tincidunt sit amet erat malesuada interdum. Aenean sodales dui quis leo fermentum scelerisque. Fusce condimentum dolor justo, ac tristique diam iaculis at.
-						</p>
-					</div>
-					<img class="img-fluid d-none d-md-block" src="{{url('/')}}/assets/img/background-missao.jpg" alt="Dra. Juliana Martines"> 					
-				</div>
-			</div>
-		</div>
-	</section>
-	<section class="section-unidade" id="box-unidades-nav">
-		<div class="container">
+	<section class="section-midias" id="box-midias-nav">
+		<div class="container containerP">
 			<div class="row">
-    			<div class="col-12 col-sm-12">
-					<h2>
-						Unidade Vila Hortência <br>
-						<span>Sorocaba-SP</span>
-					</h2>
+				<div class="col-md-12">
+					<h2 class="translateX">MÍDIA</h2>
 				</div>
 			</div>
-    		<div class="row">
-    			<div class="col-12 col-sm-12 col-md-6 box-unidade">
-					<img class="img-fluid d-block" src="{{url('/')}}/assets/img/unidade-sorocaba.jpg" alt="Unidade Sorocaba">
-					<h3>
-						SOROCABA
-					</h3> 
+			<div class="row bloco-midias">
+				<div class="col-md-6 bloco-midia fotos noPaddingX">
+					<a href="#">
+						<img src="{{url('/')}}/assets/img/fotos.png" alt="fotos" class="img-responsive transition03">
+						<h3 class="transition03">
+							<img src="{{url('/')}}/assets/img/foto.png" alt="fotos" class="img-responsive transition03">
+							# Fotos
+						</h3>
+					</a>
 				</div>
-				<div class="col-12 col-sm-12 col-md-3 box-unidade">
-    				<img class="img-fluid d-block" src="{{url('/')}}/assets/img/unidade-sao-paulo.jpg" alt="Unidade São Paulo"> 
-					<h3>
-						SÃO PAULO
-					</h3> 
-				</div>
-				<div class="col-12 col-sm-12 col-md-3 box-unidade">
-    				<img class="img-fluid d-block" src="{{url('/')}}/assets/img/unidade-sorocaba2.jpg" alt="Unidade Sorocaba 2"> 
-					<h3>
-						SOROCABA 2
-					</h3> 
+				<div class="col-md-6 bloco-midia videos noPaddingX">
+					<a href="#">
+						<img src="{{url('/')}}/assets/img/videos.png" alt="videos" class="img-responsive transition03">
+						<h3 class="transition03">
+							<img src="{{url('/')}}/assets/img/video.png" alt="videos" class="img-responsive transition03">
+							# videos
+						</h3>
+					</a>
 				</div>
 			</div>
 		</div>
 	</section>
+
+
 	<section class="section-form" id="box-contato-nav">
-		<div class="container">
+		<div class="container containerP">
 			<div class="row">	
-				<div class="col-12 col-sm-6 col-md-6 col-lg-6 box-form">
+				<div class="col-12 col-sm-6 col-md-6 col-lg-4 content-telefone">
+					<div class="box-telefone">
+						<i class="fa fa-map-marker-alt"></i>
+						<a href="">
+							<h3>
+								Mapa
+							</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</a>	
+					</div>	
+					<div class="box-telefone">
+						<i class="fas fa-phone-alt"></i>
+						<h3>
+							Fone
+						</h3>
+						<a href="">
+							+15  3326-0008
+						</a>	<br>
+						<a href="">
+							+15  98120-0560
+						</a>
+					</div>	
+				</div>		
+				<div class="col-12 col-sm-6 col-md-6 col-lg-8 box-form">
 					<h2>
+						<span>ENTRE EM</span>
 						Contato
 					</h2>
 					<form class="form-horizontal" method="POST" data-grecaptcha-action="message" action="{{url('/')}}/post-contato">
@@ -218,13 +217,6 @@
 						</div>
 						<div class="form-group">
 							<div class="row">
-								<div class="col-lg-12 col-md-12 col-sm-12 col-12">
-									<input type="text" class="form-control" name="assunto" placeholder="*Assunto:" maxlength="255" value="{{ old('assunto') }}">
-								</div>
-							</div>
-						</div>
-						<div class="form-group">
-							<div class="row">
 								<div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-15">
 									<textarea class="form-control" rows="5" name="mensagem" placeholder="*Mensagem:">{{ old('mensagem') }}</textarea>
 								</div>
@@ -233,7 +225,9 @@
 						<div class="form-group">
 							<div class="row justify-content-sm-center">
 								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<input type="submit" class="btn btn-enviar transition03" value="Enviar">
+									<button type="submit" class="btn btn-success enviar transition03">
+									    ENVIAR  <i class="fas fa-play"></i>
+									</button>
 								</div>
 							</div>
 						</div>
@@ -281,58 +275,6 @@
 						</div>
 					@endif
 				</div>	
-				<div class="col-12 col-sm-6 col-md-6 col-lg-6 content-telefone">
-					<div class="box-telefone">
-						<h3>
-							Telefone
-						</h3>
-						<i class="fa fa-whatsapp"></i>
-						<a href="">
-							+15  3326-0008
-						</a>	<br>
-						<a href="">
-							+15  98120-0560
-						</a>
-					</div>	
-					<div class="box-telefone">
-						<h3>
-							E-mail 
-						</h3>
-						<i class="fas fa-envelope"></i>
-						<a href="">
-							diretoria@grupoarf.com.br
-						</a><br>
-						<a href="">
-							comercial@grupoarf.com.br
-						</a><br>
-						<a href="">
-							comercial@grupoarf.com.br
-						</a>
-					</div>	
-					<div class="box-telefone ultimo">
-						<h3>
-							Rede Social
-						</h3>
-						<div class="row">
-							<div class="col-12 col-sm-6">
-								<a href="">
-									<i class="fab fa-facebook-square"></i> grupoarf
-								</a><br>
-								<a href="">
-									<i class="fab fa-instagram"></i> @grupoarf
-								</a><br>
-							</div>
-							<div class="col-12 col-sm-6">
-								<a href="">
-									<i class="fab fa-youtube"></i> grupoarf
-								</a><br>
-								<a href="">
-									<i class="fab fa-twitter"></i> @grupoarf
-								</a>
-							</div>
-						</div>
-					</div>	
-				</div>		
 			</div>
 		</div>
 	</section>

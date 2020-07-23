@@ -436,7 +436,7 @@ p {
 }
 
 .section-form {
-    background: #000000;
+    background: #31b175;
     padding: 100px 0px;
 }
 
@@ -689,4 +689,204 @@ p {
     text-align: center;
     margin-right: 10px;
     line-height: 30px;
+}
+
+.transition03 {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;'
+    transition: all 0.3s ease;
+}
+.transition05 {
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;'
+    transition: all 0.5s ease;
+}
+.transition07 {
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -ms-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+.transition20 {
+    -webkit-transition: all 2.0s ease;
+    -moz-transition: all 2.0s ease;
+    -ms-transition: all 2.0s ease;
+    -o-transition: all 2.0s ease;
+    transition: all 2.0s ease;
+}
+.translateX {
+    -ms-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.translateY {
+    -ms-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+.translateXY {
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.noPaddingX {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.container.containerP{
+    max-width: 1100px;
+}
+
+.container.containerG{
+    max-width: 1450px;
+}
+
+.bloco-midia h3 {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: #FFF;
+}
+
+.bloco-midia {
+    overflow: hidden;
+    position: relative;
+    float: left;
+    width: 50%;
+}
+
+.bloco-midia.fotos {
+    border-radius: 100px 0 0 0;
+}
+
+.bloco-midia.videos {
+    border-radius: 0 0 100px 0;
+}
+
+.bloco-midia a:hover img {
+    transform: scale(1.10) rotate(1deg);
+}
+
+.section-midias h2.translateX {
+    position: relative;
+    float: left;
+    margin-left: 50%;
+    margin-bottom: 45px;
+    margin-top: 45px;
+}
+
+.section-midias {
+    padding-bottom: 70px;
+}
+
+.section-midias h2.translateX::before {
+    width: 35px;
+    height: 2px;
+    position: absolute;
+    background-color: #929292;
+    top: 13px;
+    left: -60px;
+    content: "";
+}
+
+.box-telefone, .box-form {
+    background-color: #31b175;
+}
+
+.box-telefone i {
+    background: #2cab71ff;
+    color: #FFF;
+    width: 100px;
+    text-align: center;
+    height: 100px;
+    line-height: 100px;
+    position: relative;
+    float: left;
+    font-size: 50px;
+    margin: 0 30px 0px 0;
+}
+
+.content-telefone h3 {
+    font-family: 'MyriadPro-Regular';
+    text-transform: uppercase;
+    font-size: 16px;
+    color: #000;
+    width: 100%;
+    margin-bottom: 0px;
+    margin-top: 25px;
+}
+
+.content-telefone p {
+    font-family: 'MyriadPro-Regular';
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #000;
+    width: 100%;
+    margin-bottom: 0px;
+    line-height: 14px;
+}
+
+.box-telefone a {
+    color: #000;
+    font-size: 12px;
+}
+
+.box-telefone {
+    position: relative;
+    float: left;
+    width: 100%;
+    margin: 0px 0 50px 0;
+    padding: 0;
+    line-height: 14px;
+}
+
+.box-form h2 {
+    position: relative;
+    float: left;
+    width: 100%;
+    color: #000;
+}
+
+.box-form h2 span {
+    position: absolute;
+    font-size: 10px;
+    top: -10px;
+}
+
+.box-form h2 span::before {
+    width: 35px;
+    height: 2px;
+    position: absolute;
+    background-color: #000;
+    top: 5px;
+    left: -60px;
+    content: "";
+}
+
+.box-form input[type=text], .box-form textarea {
+    background: #FFF;
+    border-radius: 0px;
+    color: #000;
+    border: none;
+}
+
+.box-form {
+    padding: 0;
+}
+
+button.btn.btn-success.enviar.transition03 {
+    float: right;
+    background: #31b175;
+    border: none;
+}
+
+button.btn.btn-success.enviar.transition03:hover {
+    background: #2cab71;
 }
