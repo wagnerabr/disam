@@ -3,22 +3,27 @@
 	<section class="section-footer">
 		<div class="container containerP">
 			<div class="row">
-				<div class="col-md-3">
-					<img class="img-fluid img-logo" alt="Disam - Tecnologia Moderna para Agricultura" src="{{ url('/') }}/assets/img/logo.png">
+				<div class="col-md-3 col-sm-3 col-xs-12 center-footer-xs">
+					<img class="img-fluid img-logo-rodape" alt="Disam - Tecnologia Moderna para Agricultura" src="{{ url('/') }}/assets/img/logo.png">
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-2 col-sm-2 col-xs-12 center-footer-xs">
 					<div class="titulo-footer">MAIS +</div>
-					<a href="#">Unidades</a>
-					<a href="#">Notícias</a>
-					<a href="#">Cotações</a>
+					<a href="#" class="link-mais">Unidades</a>
+					<a href="#" class="link-mais">Notícias</a>
+					<a href="#" class="link-mais">Cotações</a>
 				</div>
-				<div class="col-md-3">
+				<div class="col-md-3 col-sm-3 col-xs-12 center-footer-xs">
 					<div class="titulo-footer">ATENDIMENTO</div>
-
+					<p class="itens-atendimento">
+						Seg - Sex: 9:00 - 18:00<br>
+						<a href="#">disam@disam.com.br</a><br>
+						<a href="#">disam@disam.com.br</a>
+					</p>
 				</div>
-				<div class="col-md-3">
-					<div class="titulo-footer">NEWSLETTER</div>
+				<div class="col-md-4 col-sm-4 col-xs-12 center-footer-xs">
+					<div class="titulo-footer center-footer-xs">NEWSLETTER</div>
 					<form id="formNewsletter">
+						<label for="newsletter" class="labelSeuEmail">Seu Email</label>
 						<input type="text" name="newsletter" id="newsletter">
 						<div class="submitNewsletter">
 							<i class="fab fa-telegram-plane"></i>

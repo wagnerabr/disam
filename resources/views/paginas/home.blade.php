@@ -28,18 +28,17 @@
 
 
 	<section class="section-institucional" id="box-institucional-nav">
-		<div class="row">
-			<div class="col-md-6 col-sm-6 col-xs-12">
-				<img src="{{url('/')}}/assets/img/sobre-nos.png" alt="Nossa Unidades" class="img-responsive">
-			</div>
-			<div class="col-md-6 col-sm-6 col-xs-12">
-				<h2>SOBRE NÓS</h2>
-				<p>
-					Atuando desde o início no comércio e distribuição de insumos agrícolas, a DISAM firmou sua excelência no segmento ao expandir suas atividades no ano de 2002 para o recebimento, importação e exportação de cereais, além da produção de sementes de soja e trigo a partir de 2004.<br>
-					A partir daí a empresa se consolidou no mercado em que atua tornando-se uma referencia no fornecimento de produtos, assistência técnica e credibilidade no ramo agrícola.
-				</p>
-			</div>
+		<div class="col-md-6 col-sm-6 col-xs-12">
+			<img src="{{url('/')}}/assets/img/sobre-nos.png" alt="Nossa Unidades" class="img-responsive">
 		</div>
+		<div class="col-md-6 col-sm-6 col-xs-12">
+			<h2>SOBRE NÓS</h2>
+			<p>
+				Atuando desde o início no comércio e distribuição de insumos agrícolas, a DISAM firmou sua excelência no segmento ao expandir suas atividades no ano de 2002 para o recebimento, importação e exportação de cereais, além da produção de sementes de soja e trigo a partir de 2004.<br>
+				A partir daí a empresa se consolidou no mercado em que atua tornando-se uma referencia no fornecimento de produtos, assistência técnica e credibilidade no ramo agrícola.
+			</p>
+		</div>
+
 		<div class="container">
 			<div class="row">
 				<div class="col-md-4 col-sm-12 col-xs-12">
@@ -145,7 +144,7 @@
 				</div>
 			</div>
 			<div class="row bloco-midias">
-				<div class="col-md-6 bloco-midia fotos noPaddingX">
+				<div class="col-md-6 col-sm-6 col-12 bloco-midia fotos noPaddingX">
 					<a href="#">
 						<img src="{{url('/')}}/assets/img/fotos.png" alt="fotos" class="img-responsive transition03">
 						<h3 class="transition03">
@@ -154,7 +153,7 @@
 						</h3>
 					</a>
 				</div>
-				<div class="col-md-6 bloco-midia videos noPaddingX">
+				<div class="col-md-6 col-sm-6 col-12 bloco-midia videos noPaddingX">
 					<a href="#">
 						<img src="{{url('/')}}/assets/img/videos.png" alt="videos" class="img-responsive transition03">
 						<h3 class="transition03">
@@ -171,7 +170,7 @@
 	<section class="section-form" id="box-contato-nav">
 		<div class="container containerP">
 			<div class="row">	
-				<div class="col-12 col-sm-6 col-md-6 col-lg-4 content-telefone">
+				<div class="col-sm-6 col-md-6 col-lg-4 content-telefone">
 					<div class="box-telefone">
 						<i class="fa fa-map-marker-alt"></i>
 						<a href="">
@@ -194,7 +193,7 @@
 						</a>
 					</div>	
 				</div>		
-				<div class="col-12 col-sm-6 col-md-6 col-lg-8 box-form">
+				<div class="col-sm-6 col-md-6 col-lg-8 box-form">
 					<h2>
 						<span>ENTRE EM</span>
 						Contato
@@ -203,21 +202,21 @@
 						{!! csrf_field() !!}
 						<div class="form-group">
 							<div class="row">
-								<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+								<div class="col-lg-12 col-md-12 col-sm-12 ">
 									<input type="text" class="form-control" name="nome" placeholder="*Nome:" maxlength="255"  value="{{ old('nome') }}">
 								</div>
 							</div>
 						</div>
 						<div class="form-group">
 							<div class="row">
-								<div class="col-lg-12 col-md-12 col-sm-12 col-12">
+								<div class="col-lg-12 col-md-12 col-sm-12 ">
 									<input type="text" class="form-control" name="email" placeholder="*E-mail:" maxlength="255" value="{{ old('email') }}">
 								</div>
 							</div>
 						</div>
 						<div class="form-group">
 							<div class="row">
-								<div class="col-lg-12 col-md-12 col-sm-12 col-12 mb-15">
+								<div class="col-lg-12 col-md-12 col-sm-12 mb-15">
 									<textarea class="form-control" rows="5" name="mensagem" placeholder="*Mensagem:">{{ old('mensagem') }}</textarea>
 								</div>
 							</div>

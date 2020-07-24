@@ -878,7 +878,8 @@ p {
 }
 
 .box-form {
-    padding: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 button.btn.btn-success.enviar.transition03 {
@@ -889,4 +890,126 @@ button.btn.btn-success.enviar.transition03 {
 
 button.btn.btn-success.enviar.transition03:hover {
     background: #2cab71;
+}
+
+img.img-fluid.img-logo-rodape {
+    max-width: 150px;
+    margin-top: 20px;
+}
+
+section.section-footer {
+    padding: 60px 0;
+}
+
+.titulo-footer {
+    color: #31b175;
+    font-weight: bold;
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+
+a.link-mais {
+    position: relative;
+    float: left;
+    clear: both;
+    color: #888888;
+    margin-bottom: 3px;
+}
+
+input#newsletter {
+    border-bottom: 1px #CCC solid;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: -moz-calc(100% - 50px);
+    width: -webkit-calc(100% - 50px);
+    width: -o-calc(100% - 50px);
+    width: calc(100% - 50px);
+}
+
+.midias-footer {
+    position: relative;
+    float: left;
+    color: #888;
+    margin: 20px 30px 0px 0px;
+}
+
+.submitNewsletter {
+    position: relative;
+    float: right;
+    width: 40px;
+    height: 40px;
+    background: #31b175;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #FFF;
+    font-size: 20px;
+}
+
+label.labelSeuEmail {
+    margin: 0;
+    color: #888;
+    font-style: italic;
+}
+
+p.itens-atendimento {
+    font-size: 14px;
+}
+
+p.itens-atendimento a{
+    color: #888;
+}
+
+form.form-horizontal {
+    position: relative;
+    float: left;
+    width: 100%;
+}
+
+@media (max-width: 575px) {
+    .center-footer-xs {
+        text-align: center; 
+    }
+
+    a.link-mais {
+        width: 100%;
+    }
+    .bloco-midia {
+        max-height: 120px;
+    }
+
+    .bloco-midia a > img {
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 1110px) {
+    .bloco-midias {
+        padding: 0 15px;
+    }
+}
+
+#box-noticias-nav h2 {
+    position: relative;
+    float: left;
+    width: 100%;
+    color: #000;
+}
+
+#box-noticias-nav h2 span {
+    position: absolute;
+    font-size: 10px;
+    top: -10px;
+}
+
+#box-noticias-nav h2 span::before {
+    width: 35px;
+    height: 2px;
+    position: absolute;
+    background-color: #000;
+    top: 5px;
+    left: -60px;
+    content: "";
 }
