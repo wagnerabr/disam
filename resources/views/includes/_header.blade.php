@@ -1,10 +1,11 @@
-<header class="header-principal">	
-	<nav class="navbar navbar-expand-lg navbar-light ">
+<div class="espaco-menu"></div>
+<header class="header-principal transition03">	
+	<nav class="navbar navbar-expand-lg navbar-light">
 	  <div class="container box-principal-menu">
 		  <a class="navbar-brand" href="{{ url('/') }}/" title="Disam - Tecnologia Moderna para Agricultura">
 		  		<img class="img-fluid img-logo" alt="Disam - Tecnologia Moderna para Agricultura" src="{{ url('/') }}/assets/img/logo.png">
 		  </a>
-		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">	
 		    <span class="navbar-toggler-icon"></span>
 		  </button>
 		  <div class="collapse navbar-collapse box-menu-link" id="navbarNavAltMarkup">

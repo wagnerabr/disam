@@ -5,7 +5,7 @@
 @section('canonical', '<link rel="canonical" href="">')
 
 @section('content')
-	<section>   
+	<section class="area-banner">   
 		<div class="loop owl-carousel owl-theme mb-50">
 		    @foreach($banners as $b)
 		        <div>    
@@ -28,18 +28,21 @@
 
 
 	<section class="section-institucional" id="box-institucional-nav">
-		<div class="col-md-6 col-sm-6 col-xs-12">
-			<img src="{{url('/')}}/assets/img/sobre-nos.png" alt="Nossa Unidades" class="img-responsive">
-		</div>
-		<div class="col-md-6 col-sm-6 col-xs-12">
-			<h2>SOBRE NÓS</h2>
-			<p>
-				Atuando desde o início no comércio e distribuição de insumos agrícolas, a DISAM firmou sua excelência no segmento ao expandir suas atividades no ano de 2002 para o recebimento, importação e exportação de cereais, além da produção de sementes de soja e trigo a partir de 2004.<br>
-				A partir daí a empresa se consolidou no mercado em que atua tornando-se uma referencia no fornecimento de produtos, assistência técnica e credibilidade no ramo agrícola.
-			</p>
+		<div class="row">
+			<div class="col-md-6">
+				<img src="{{url('/')}}/assets/img/sobre-nos.png" alt="Nossa Unidades" class="img-responsive">
+			</div>
+			<div class="col-md-6">
+				<h2>SOBRE NÓS</h2>
+				<p>
+					Atuando desde o início no comércio e distribuição de insumos agrícolas, a DISAM firmou sua excelência no segmento ao expandir suas atividades no ano de 2002 para o recebimento, importação e exportação de cereais, além da produção de sementes de soja e trigo a partir de 2004.<br>
+					A partir daí a empresa se consolidou no mercado em que atua tornando-se uma referencia no fornecimento de produtos, assistência técnica e credibilidade no ramo agrícola.
+				</p>
+				<a href="#">Ler Mais <i class="fas fa-play"></i></a>
+			</div>
 		</div>
 
-		<div class="container">
+		<div class="container containerP topicosSobre">
 			<div class="row">
 				<div class="col-md-4 col-sm-12 col-xs-12">
 					<div class="row">
@@ -89,24 +92,26 @@
     				<h2>Cotações: <span>10/07/2020</span></h2>
     				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod dignissim dictum. Mauris arcu leo, blandit quis vestibulum ac, lacinia quis dolor.</p>
     			</div>
-    			<div class="col-md-6">
+    			<div class="col-md-4">
     				<div class="row">
-    					<div class="col-md-6">
+    					<div class="col-md-6 col-sm-6 display-cotacao comBarra">
     						<img src="{{url('/')}}/assets/img/trigo.png" alt="Cotação Trigo" class="img-responsive">
     						<h3>Trigo</h3>
     						<h4>R$ 58,00</h4>
+    						<div class="barraMd hidden-xs"></div>
     					</div>
-    					<div class="col-md-6">
+    					<div class="col-md-6 col-sm-6 display-cotacao">
     						<img src="{{url('/')}}/assets/img/soja.png" alt="Cotação Soja" class="img-responsive">
     						<h3>Soja</h3>
     						<h4>R$ 100,00</h4>
     					</div>
-    					<div class="col-md-6">
+    					<div class="col-md-6 col-sm-6 display-cotacao comBarra">
     						<img src="{{url('/')}}/assets/img/dolar.png" alt="Cotação Dolar" class="img-responsive">
     						<h3>Dolar</h3>
     						<h4>R$ 5,2978</h4>
+    						<div class="barraMd hidden-xs"></div>
     					</div>
-    					<div class="col-md-6">
+    					<div class="col-md-6 col-sm-6 display-cotacao">
     						<img src="{{url('/')}}/assets/img/milho.png" alt="Cotação Milho" class="img-responsive">
     						<h3>Milho</h3>
     						<h4>R$ 41,50</h4>
@@ -376,6 +381,21 @@
 				}).trigger('focusout');
 			});	
 
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(function() {
+			var testeScroll = 0;
+			$( window ).scroll(function() {
+				if ($(window).scrollTop() > 135 && testeScroll == 0) {
+					// MUDA AS CLASSES
+					testeScroll = 1;
+				} else if ($(window).scrollTop() <= 135 && testeScroll == 1) {
+					// MUDA AS CLASSES
+					testeScroll = 0;
+				}
+			});
 		});
 	</script>
 @endsection

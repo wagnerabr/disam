@@ -271,7 +271,7 @@ p {
     position: fixed;
     right: 0;
     top: 122px;
-    z-index: 4;
+    z-index: 9999;
 }
 
 .area-central-relacionamento .link {
@@ -1013,3 +1013,97 @@ form.form-horizontal {
     left: -60px;
     content: "";
 }
+
+.section-cotacoes {
+    padding: 100px 0;
+}
+
+.section-cotacoes h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.section-cotacoes h2 span {
+    font-weight: normal;
+    color: #31b175;
+}
+
+.section-cotacoes img.img-responsive {
+    position: relative;
+    float: left;
+}
+
+.section-cotacoes h3 {
+    font-size: 35px;
+    color: #31b175;
+    font-weight: 700;
+}
+
+.section-cotacoes h4 {
+    font-size: 18px;
+    color: #000;
+    font-weight: 700;
+}
+
+.display-cotacao {
+    margin-bottom: 30px;
+    position: relative;
+    float: left;
+}
+
+.barraMd.hidden-xs {
+    position: absolute;
+    width: 2px;
+    background-color: #CCC;
+    height: 100%;
+    top: 0;
+    right: 0;
+}
+
+.section-noticias {
+    padding: 50px;
+}
+
+@media (max-width: 1480px) {
+    .section-noticias {
+        padding: 50px 15px;
+    }
+}
+
+.section-noticias h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.topicosSobre {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.header-principal {
+    position: fixed;
+    width: 100%;
+    z-index: 9998;
+}
+
+.espaco-menu {
+    width: 100%;
+    position: relative;
+    float: left;
+    height: 135px;
+}
+
+section.area-banner {
+    position: relative;
+    float: left;
+    clear: both;
+}
+
+section {
+    position: relative;
+    float: left;
+}
+
