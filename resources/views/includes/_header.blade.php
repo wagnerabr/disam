@@ -1,9 +1,8 @@
-<div class="espaco-menu"></div>
-<header class="header-principal transition03">	
-	<nav class="navbar navbar-expand-lg navbar-light">
+<header class="header-principal transition03 fixed-top">
+	<nav class="navbar navbar-expand-lg navbar-light ">
 	  <div class="container box-principal-menu">
 		  <a class="navbar-brand" href="{{ url('/') }}/" title="Disam - Tecnologia Moderna para Agricultura">
-		  		<img class="img-fluid img-logo" alt="Disam - Tecnologia Moderna para Agricultura" src="{{ url('/') }}/assets/img/logo.png">
+		  		<img class="img-fluid img-logo transition05" alt="Disam - Tecnologia Moderna para Agricultura" src="{{ url('/') }}/assets/img/logo.png">
 		  </a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">	
 		    <span class="navbar-toggler-icon"></span>
@@ -21,6 +20,7 @@
 	  </div>
 	</nav>
 </header>
+<div class="espaco-menu"></div>
 <div class="area-central-relacionamento" id="central-relacionamento">
 	{{--
 	<a href="https://api.whatsapp.com/send?phone=5515999999999" target="_blank" class="transition03 link box-whatsapp">

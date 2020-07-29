@@ -32,13 +32,13 @@
 			<div class="col-md-6">
 				<img src="{{url('/')}}/assets/img/sobre-nos.png" alt="Nossa Unidades" class="img-responsive">
 			</div>
-			<div class="col-md-6">
+			<div class="col-md-6 texto-sobre-nos">
 				<h2>SOBRE NÓS</h2>
 				<p>
 					Atuando desde o início no comércio e distribuição de insumos agrícolas, a DISAM firmou sua excelência no segmento ao expandir suas atividades no ano de 2002 para o recebimento, importação e exportação de cereais, além da produção de sementes de soja e trigo a partir de 2004.<br>
 					A partir daí a empresa se consolidou no mercado em que atua tornando-se uma referencia no fornecimento de produtos, assistência técnica e credibilidade no ramo agrícola.
 				</p>
-				<a href="#">Ler Mais <i class="fas fa-play"></i></a>
+				<a href="#" class="ler-sobre-nos">Ler Mais <i class="fas fa-play"></i></a>
 			</div>
 		</div>
 
@@ -46,7 +46,7 @@
 			<div class="row">
 				<div class="col-md-4 col-sm-12 col-xs-12">
 					<div class="row">
-						<div class="col-md-3 col-sm-4 col-xs-5">
+						<div class="col-md-3 col-sm-4 col-xs-5 img-topicos-sobre">
 							<img src="{{url('/')}}/assets/img/missao.png" alt="Missão" class="img-responsive">
 						</div>
 						<div class="col-md-9 col-sm-8 col-xs-7">
@@ -58,7 +58,7 @@
 
 				<div class="col-md-4 col-sm-12 col-xs-12">
 					<div class="row">
-						<div class="col-md-3 col-sm-4 col-xs-5">
+						<div class="col-md-3 col-sm-4 col-xs-5 img-topicos-sobre">
 							<img src="{{url('/')}}/assets/img/visao.png" alt="Visão" class="img-responsive">
 						</div>
 						<div class="col-md-9 col-sm-8 col-xs-7">
@@ -70,7 +70,7 @@
 
 				<div class="col-md-4 col-sm-12 col-xs-12">
 					<div class="row">
-						<div class="col-md-3 col-sm-4 col-xs-5">
+						<div class="col-md-3 col-sm-4 col-xs-5 img-topicos-sobre">
 							<img src="{{url('/')}}/assets/img/valores.png" alt="Valores" class="img-responsive">
 						</div>
 						<div class="col-md-9 col-sm-8 col-xs-7">
@@ -330,7 +330,7 @@
 				responsive:{
 					0:{
 						items:1,
-						nav:true,
+						nav:false,
 						dots:false,
 						slideBy: 1,
 					},
@@ -382,20 +382,23 @@
 			});	
 
 		});
-	</script>
 
-	<script type="text/javascript">
 		$(function() {
 			var testeScroll = 0;
 			$( window ).scroll(function() {
 				if ($(window).scrollTop() > 135 && testeScroll == 0) {
 					// MUDA AS CLASSES
+					$(".img-logo").addClass("menu-top-out");
+					$(".header-principal").addClass("menu-top-out");
 					testeScroll = 1;
 				} else if ($(window).scrollTop() <= 135 && testeScroll == 1) {
 					// MUDA AS CLASSES
 					testeScroll = 0;
+					$(".img-logo").removeClass("menu-top-out");
+					$(".header-principal").removeClass("menu-top-out");
 				}
 			});
 		});
 	</script>
+
 @endsection
