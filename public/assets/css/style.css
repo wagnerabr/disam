@@ -423,16 +423,16 @@ p {
 }
 
 .box-unidade h3 {
-    background: #ff2b4a;
-    position: absolute;
-    bottom: 10px;
-    left: 25px;
+    background: #31b175;
+    position: relative;
+    float: left;
     text-transform: uppercase;
     color: #fff;
     font-family: 'MyriadPro-Bold';
-    font-size: 13px;
+    font-size: 18px;
     padding: 10px 20px;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
+    clear: both;
 }
 
 .section-form {
@@ -1176,6 +1176,45 @@ a.ler-sobre-nos::before {
     }
 }
 
-/*.owl-dots.disabled {
-    display: none;
-}*/
+.unidades {
+    padding-top: 60px; 
+    padding-bottom: 60px;
+}
+
+.unidades h2 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 40px;
+    color: #31b175;
+}
+
+.box-unidade p {
+    position: relative;
+    float: left;
+    width: 100%;
+    font-size: 14px;
+    margin-bottom: 25px;
+    line-height: 16px;
+}
+
+.section-page-blog, .page-detalhe-blog{
+    margin-top: 160px;
+}
+
+.section-page-blog h1, .page-detalhe-blog h1, .section-page-blog h2, .page-detalhe-blog h2, .section-page-blog h3, .page-detalhe-blog h3, .section-page-blog a,
+.page-detalhe-blog a, .content-blog a , .content-blog a{
+    color: #31b175;
+}
+
+.section-page-blog h1, .page-detalhe-blog h1 {
+    color: #31b175;
+}
+
+.container.content-blog {
+    border-bottom: 2px solid #31b175;
+}
+
+.content-blog p a {
+    color: #959595;
+}

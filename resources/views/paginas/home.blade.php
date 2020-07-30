@@ -383,22 +383,7 @@
 
 		});
 
-		$(function() {
-			var testeScroll = 0;
-			$( window ).scroll(function() {
-				if ($(window).scrollTop() > 135 && testeScroll == 0) {
-					// MUDA AS CLASSES
-					$(".img-logo").addClass("menu-top-out");
-					$(".header-principal").addClass("menu-top-out");
-					testeScroll = 1;
-				} else if ($(window).scrollTop() <= 135 && testeScroll == 1) {
-					// MUDA AS CLASSES
-					testeScroll = 0;
-					$(".img-logo").removeClass("menu-top-out");
-					$(".header-principal").removeClass("menu-top-out");
-				}
-			});
-		});
+		
 	</script>
 
 @endsection

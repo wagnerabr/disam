@@ -15,7 +15,10 @@ Route::group([
 ], function() {
 	Route::get('/', 'HomeController@index');
 
+	Route::get('unidades', 'UnidadesController@index');
+
 	Route::get('sobre', 'SobreController@index');
+
 
 	Route::get('procedimentos', 'ProcedimentoController@index'); 
 

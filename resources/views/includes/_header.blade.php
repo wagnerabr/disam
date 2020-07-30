@@ -10,11 +10,11 @@
 		  <div class="collapse navbar-collapse box-menu-link" id="navbarNavAltMarkup">
 		    <div class="navbar-nav">
 			  <a class="nav-item nav-link" href="{{ url('/') }}/">Home</a> 
-       		  <a class="nav-item nav-link links-menu" data-id="institucional-nav" title="Institucional" href="#institucional">Institucional</a> 
-			  <a class="nav-item nav-link links-menu" data-id="unidades-nav" title="Unidades" href="#unidades">Unidades</a>
-			  <a class="nav-item nav-link links-menu" data-id="cotacoes-nav" title="Cotações" href="#cotacoes">Cotações</a> 
-			  <a class="nav-item nav-link links-menu" data-id="noticias-nav" title="Notícias" href="#noticias">Notícias</a> 
-		      <a class="nav-item nav-link links-menu" data-id="contato-nav" title="Contato" href="#contato">Contato</a>
+       		  <a class="nav-item nav-link links-menu" data-id="institucional-nav" title="Institucional" href="{{ url('/') }}#institucional">Institucional</a> 
+			  <a class="nav-item nav-link links-menu" data-id="unidades-nav" title="Unidades" href="{{ url('/') }}/unidades">Unidades</a>
+			  <a class="nav-item nav-link links-menu" data-id="cotacoes-nav" title="Cotações" href="{{ url('/') }}#cotacoes">Cotações</a> 
+			  <a class="nav-item nav-link links-menu" data-id="noticias-nav" title="Notícias" href="{{ url('/') }}#noticias">Notícias</a> 
+		      <a class="nav-item nav-link links-menu" data-id="contato-nav" title="Contato" href="{{ url('/') }}#contato">Contato</a>
 		    </div>
 		  </div>
 	  </div>
