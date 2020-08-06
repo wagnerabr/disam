@@ -86,13 +86,13 @@
 
 
 	<section class="section-cotacoes" id="box-cotacoes-nav">
-    	<div class="container containerG">
+    	<div class="container">
     		<div class="row">
     			<div class="col-md-6">
     				<h2>Cotações: <span>10/07/2020</span></h2>
     				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla euismod dignissim dictum. Mauris arcu leo, blandit quis vestibulum ac, lacinia quis dolor.</p>
     			</div>
-    			<div class="col-md-4">
+    			<div class="col-md-6">
     				<div class="row">
     					<div class="col-md-6 col-sm-6 display-cotacao comBarra">
     						<img src="{{url('/')}}/assets/img/trigo.png" alt="Cotação Trigo" class="img-responsive">
@@ -123,20 +123,20 @@
 	</section>
 
 	<section class="section-noticias" id="box-noticias-nav">
-		<div class="container containerG">
+		<div class="container-fluid">
 			<div class="row">
 				<h2><span>ÚLTIMAS</span>NOTÍCIAS</h2>
 			</div>
 			<div class="row carousel-noticias">
-				@for ($i = 0; $i < 9; $i++)
-				    <article>
-				    	<a href="#">
-					    	<img src="{{url('/')}}/assets/img/noticia.png" alt="NOTICIA" class="img-responsive">
-					    	<h3>Título Aqui {{ $i }}</h3>
-					    	<p>Lorem ipsum dolor sit amet, consectetur.</p>
-				    	</a>
-				    </article>
-				@endfor
+				@foreach ($posts as $post)
+					<article>
+						<a href="#">
+							<img src="{{url('/')}}/upload/blog/media/{{ $post->photos }}" alt="{{ $post->title }}" class="img-responsive">
+							<h3>{{ $post->title }}</h3>
+							<p>{{ $post->meta_description }}</p>
+						</a>
+					</article>
+				@endforeach
 			</div>
 		</div>
 	</section>
