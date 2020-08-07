@@ -46,6 +46,14 @@ if($_POST['modulo'] == 'categoria') {
 	$recorte_w = 600;
 	$recorte_h = null;
 	$resize = true;
+} elseif ($_POST['modulo'] == 'unidade') {
+	$folder = '../../../upload/unidades';
+	$caminho_original = $folder.'/original/';	
+	// $recorte_w = 1100;
+	// $recorte_h = 300;
+	$recorte_w = 1360;
+	$recorte_h = null;
+	$resize = true;
 } else {	
 	exit;
 }

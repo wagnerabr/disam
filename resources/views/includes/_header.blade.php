@@ -1,4 +1,4 @@
-<header class="header-principal transition03 fixed-top">
+<header class="header-principal <?= (isset($pagina) && $pagina == "unidade")? 'header-unidade' : ''; ?> transition03 fixed-top">
 	<nav class="navbar navbar-expand-lg navbar-light ">
 	  <div class="container box-principal-menu">
 		  <a class="navbar-brand" href="{{ url('/') }}/" title="Disam - Tecnologia Moderna para Agricultura">

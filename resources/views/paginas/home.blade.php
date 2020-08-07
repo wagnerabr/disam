@@ -35,10 +35,13 @@
 			<div class="col-md-6 texto-sobre-nos">
 				<h2>SOBRE NÓS</h2>
 				<p>
-					Atuando desde o início no comércio e distribuição de insumos agrícolas, a DISAM firmou sua excelência no segmento ao expandir suas atividades no ano de 2002 para o recebimento, importação e exportação de cereais, além da produção de sementes de soja e trigo a partir de 2004.<br>
+					Atuando desde o início no comércio e distribuição de insumos agrícolas, a DISAM firmou sua excelência no segmento ao expandir suas atividades no ano de 2002 para o recebimento, importação e exportação de cereais, além da produção de sementes de soja e trigo a partir de 2004.
 					A partir daí a empresa se consolidou no mercado em que atua tornando-se uma referencia no fornecimento de produtos, assistência técnica e credibilidade no ramo agrícola.
+					Tudo isso só foi conquistado porque um trabalho sério, com políticas de idoneidade moral e financeira, foi cultivado desde sua fundação, buscando sempre cumprir todas as suas obrigações, de modo que satisfaça seus parceiros e principalmente seus clientes.
+					Ao longo de três décadas a trajetória da DISAM se confunde com o agronegócio brasileiro, crescendo na mesma proporção, contribuindo para a transformação da riqueza da terra em alimento para a humanidade e em trabalho e divisas para os brasileiros.
+					A cada novo dia a DISAM reafirma seu compromisso com o povo brasileiro, e o maior resultado deste trabalho, fruto do esforço de seus colaboradores, e confiança depositada por seus parceiros, é a consolidação de uma empresa que atua de maneira contínua , colaborando para a expansão do agronegócio no Brasil.
 				</p>
-				<a href="#" class="ler-sobre-nos">Ler Mais <i class="fas fa-play"></i></a>
+				{{-- <a href="#" class="ler-sobre-nos">Ler Mais <i class="fas fa-play"></i></a> --}}
 			</div>
 		</div>
 
@@ -178,24 +181,24 @@
 				<div class="col-sm-6 col-md-6 col-lg-4 content-telefone">
 					<div class="box-telefone">
 						<i class="fa fa-map-marker-alt"></i>
-						<a href="">
+						{{-- <a href=""> --}}
 							<h3>
 								Mapa
 							</h3>
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-						</a>	
+							{{-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> --}}
+						{{-- </a>	 --}}
 					</div>	
 					<div class="box-telefone">
 						<i class="fas fa-phone-alt"></i>
 						<h3>
 							Fone
 						</h3>
-						<a href="">
-							+15  3326-0008
+						<a href="tel:+554535658500">
+							(45) 3565-8500
 						</a>	<br>
-						<a href="">
+						{{-- <a href="">
 							+15  98120-0560
-						</a>
+						</a> --}}
 					</div>	
 				</div>		
 				<div class="col-sm-6 col-md-6 col-lg-8 box-form">

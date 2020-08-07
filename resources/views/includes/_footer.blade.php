@@ -16,8 +16,8 @@
 					<div class="titulo-footer">ATENDIMENTO</div>
 					<p class="itens-atendimento">
 						Seg - Sex: 9:00 - 18:00<br>
-						<a href="#">disam@disam.com.br</a><br>
-						<a href="#">disam@disam.com.br</a>
+						<a href="mailto:disam@disam.com.br">disam@disam.com.br</a><br>
+						<a href="tel:+554535658500">(45) 3565-8500</a>
 					</p>
 				</div>
 				<div class="col-md-4 col-sm-4 col-xs-12 center-footer-xs">

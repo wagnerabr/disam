@@ -53,6 +53,7 @@
                                 <li><a href="{{ url('admin/procedimento') }}" title="Procedimentos" class="links-menu" >Procedimentos</a></li>
                                 <li><a href="{{ url('admin/categoria') }}" title="Categorias" class="links-menu" >Categorias de Posts</a></li>
                                 <li><a href="{{ url('admin/posts') }}" title="Posts" class="links-menu" >Posts</a></li>
+                                <li><a href="{{ url('admin/unidades') }}" title="Unidades" class="links-menu" >Unidades</a></li>
                             </ul>
                         </div>
                     </div>

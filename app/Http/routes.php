@@ -78,10 +78,10 @@ Route::group([
 		'uses' => 'PostController@postChangeStatus'
 	]);
 
-	Route::resource('procedimento', 'ProcedimentosController');
-	Route::get('procedimento/status/{id}', [
-		'as' => 'admin.procedimento.status',
-		'uses' => 'ProcedimentosController@changeStatus'
+	Route::resource('unidades', 'UnidadesController');
+	Route::get('unidades/status/{id}', [
+		'as' => 'admin.unidade.status',
+		'uses' => 'UnidadesController@changeStatus'
 	]);
 
 	Route::resource('banner', 'BannersController');

@@ -75,6 +75,10 @@ html {
     right: 10px;
 }
 
+a:link {
+    text-decoration: none;
+}
+
 
 /*Header*/
 
@@ -96,6 +100,10 @@ html {
     position: absolute;
     z-index: 9;
     top: 30px;
+}
+
+.header-principal.header-unidade .img-logo {
+    max-width: 70px;
 }
 
 .box-menu-link .nav-item {
@@ -159,19 +167,23 @@ h1 {
 
 h2 {
     color: #333333;
-    font-size: 25px;
+    font-size: 36px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
 }
 
 h3 {
     color: #333333;
     font-size: 25px;
+    font-family: 'Poppins', sans-serif;
 }
 
 p {
     color: #959595;
-    font-size: 16px;
-    font-family: "Open Sans";
-    line-height: 28px;
+    font-size: 13px;
+    /* font-family: "Open Sans"; */
+    font-family: 'Poppins', sans-serif;
+    line-height: 22px;
 }
 
 .text-center {
@@ -271,7 +283,7 @@ p {
     padding: 0;
     position: fixed;
     right: 0;
-    top: 122px;
+    top: 10px;
     z-index: 9999;
 }
 
@@ -1082,10 +1094,10 @@ form.form-horizontal {
 }
 
 .section-noticias h3 {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     margin-top: 30px;
-    margin-bottom: 0;
+    margin-bottom: 20px;
 }
 
 .topicosSobre {
@@ -1134,6 +1146,21 @@ img.menu-top-out {
 
 header.header-principal.transition03.menu-top-out {
     box-shadow: 0px 0px 10px #000;
+    height: 100px;
+}
+
+header.header-principal.header-unidade {
+    height: 100px;
+}
+
+header.header-principal.transition03.menu-top-out .box-principal-menu,
+header.header-principal.header-unidade .box-principal-menu {
+    padding: 25px 0px;
+}
+
+header.header-principal.transition03.menu-top-out .container.box-principal-menu .navbar-brand .img-logo,
+header.header-principal.header-unidade .container.box-principal-menu .navbar-brand .img-logo {
+    top: 15px;
 }
 
 .col-md-6.texto-sobre-nos {
